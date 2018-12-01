@@ -15,19 +15,29 @@
             height: 100%;
         }
         @keyframes myfirst {
+            0% {color: blue}
+            100% {color: black;}
+        }
+        @keyframes mysecond {
+
             from {opacity: 0;}
             to {opacity: 100;}
         }
-        p {
-            animation: myfirst 3s;
-            font-size: 20px;
+        h1, p {
+            font-size: 60px;
         } /*不断进行下去 infinite*/
+        #roco {
+            animation: myfirst 2s infinite;
+        }
+        #motto {
+            animation: mysecond 3s infinite;
+        }
     </style>
 </head>
 <body>
 <audio src="music/bgm.mp3" autoplay loop="loop"></audio>
 <h1>洛克王国三周年</h1>
-<p>洛克王国</p>
-<p>梦想"勇"不止步</p>
+<p id="roco">洛克王国</p>
+<p id="motto">梦想"勇"不止步</p>
 </body>
 </html>
